@@ -1,0 +1,299 @@
+
+.pay_page_all {
+
+  width: 100%;
+
+  /*支付时间*/
+  .count_down {
+    background-color: white;
+    width: 100%;
+    padding: 30px 0;
+
+    .down_time {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .money_number {
+        font-size: 16px;
+        color: #4a4a4a;
+      }
+
+      .number_time {
+        font: 14pt sans;
+        padding: 10px 10px;
+      }
+
+    }
+
+    .use_money {
+
+      text-align: center;
+      padding-top: 20px;
+
+      span {
+        color: #8a8a8a;
+        font-size: 14px;
+      }
+
+      .payment {
+        font-size: 16px;
+        color: #4a4a4a;
+        span {
+          font-size: 36px;
+          color: #4a4a4a;
+        }
+
+      }
+
+    }
+
+  }
+
+  .pay_first_way {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 0 15px;
+
+    .pay_way {
+
+      padding: 10px 5px;
+      position: relative;
+
+      .manner_way {
+        font-size: 14px;
+        color: #4a4a4a;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        box-sizing: border-box;
+        width: 96%;
+        height: 1px;
+        color: #ddd;
+        border: 1px solid #ddd;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.2);
+        transform: scaleY(0.2);
+
+      }
+
+    }
+
+    .bank_account {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0;
+      width: 100%;
+      position: relative;
+
+      .account_name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          width: 24px;
+          height: 24px;
+          padding-right: 15px;
+        }
+
+        .bank_account_name {
+          font-size: 14px;
+          color: #4a4a4a;
+        }
+
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        input.radio_all {
+          position: relative;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: top;
+          cursor: default;
+          -webkit-appearance: none;
+          user-select: none;
+          transition: background-color ease .1s;
+          &:before {
+            content: '';
+            width: .5rem;
+            height: .3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -.25rem;
+            margin-top: -.25rem;
+            background: 0 0;
+            border: 1px solid #fff;
+            border-top: 0;
+            border-right: 0;
+            z-index: 2;
+            border-radius: 0;
+            transform: rotate(-45deg);
+          }
+          &:checked {
+            background-color: #ff0200;
+            border: 1px solid #ff0200;
+            text-align: center;
+            background-clip: padding-box;
+          }
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        box-sizing: border-box;
+        width: 96%;
+        height: 1px;
+        color: #ddd;
+        border: 1px solid #ddd;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scaleY(0.2);
+        transform: scaleY(0.2);
+
+      }
+
+      &:last-child:after {
+        content: '';
+        border: none;
+      }
+
+    }
+
+  }
+
+  /*提交订单*/
+  .operation_tab_b {
+    position: fixed;
+    height: 55px;
+    z-index: 500;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hkb_alignment_left {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+
+      label {
+        padding: 0 15px;
+        input.radio {
+          position: relative;
+          width: 20px;
+          height: 20px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          cursor: default;
+          -webkit-appearance: none;
+          user-select: none;
+          transition: background-color ease .1s;
+          &:before {
+            content: '';
+            width: .5rem;
+            height: .3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -.25rem;
+            margin-top: -.25rem;
+            background: 0 0;
+            border: 1px solid #fff;
+            border-top: 0;
+            border-right: 0;
+            z-index: 2;
+            border-radius: 0;
+            transform: rotate(-45deg);
+          }
+          &:checked {
+            background-color: #ff0200;
+            border: 1px solid #ff0200;
+            text-align: center;
+            background-clip: padding-box;
+          }
+        }
+        span {
+          padding-left: 10px;
+          font-size: 16px;
+          vertical-align: middle;
+        }
+      }
+
+      .hkb_price {
+        text-align: right;
+        color: #4a4a4a;
+        padding-right: 10px;
+        .font_red {
+          font-size: 16px;
+          font-weight: bold;
+          color: #4a4a4a;
+        }
+        p {
+          font-size: 12px;
+          color: #8a8a8a;
+        }
+
+      }
+
+    }
+
+    .operation_btn {
+
+      display: inline-block;
+      color: #fff;
+      font-size: 16px;
+      line-height: 55px;
+      text-align: center;
+      white-space: nowrap;
+      width: 30%;
+      background-color: #ff8000;
+
+      &:active {
+        opacity: .8;
+      }
+
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      color: #ddd;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scaleY(0.2);
+      transform: scaleY(0.2);
+    }
+
+  }
+
+}
