@@ -155,17 +155,17 @@
     </div>
 
     <!-- nav -->
-    <div class="images_nav">
+<!--    <div class="images_nav">
         <div class="images_nav_tab " id="NavTab">
             <a class="tab choose_tab"
                onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_description')[0],87)">图文详情</a>
             <a class="tab"
                onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_parameter')[0],87)">规格参数</a>
-         <!--   <a class="tab"
-               onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_service')[0],86)">售后相关</a>-->
+         &lt;!&ndash;   <a class="tab"
+               onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_service')[0],86)">售后相关</a>&ndash;&gt;
         </div>
         <div class="images_nav_tab_empty"></div>
-    </div>
+    </div>-->
 
     <!--图文详情-->
     <div class="product_images_description">
@@ -448,34 +448,6 @@
 
     //切换顶部tab
     //jfProductDetailsIntroduce.clickTabChange(document.getElementsByClassName('content')[0], 'choose_tab', 'nav_tab');
-    //滚动切换
-    jfProductDetailsIntroduce.tabScrollChange();
-
-
-    //滚动滑动到一定位置tab固定
-    window.addEventListener('scroll',jfProductDetails.slidePositionTab);
-
-
-    //图文&规格&售后 切换
-    jfProductDetailsIntroduce.clickTabChange(document.getElementById('NavTab'), 'choose_tab', 'tab');
-
-
-    /*商品详情页图片滚动以及缩放*/
-    productInfoPlay.init({
-
-        "moveEle":"product_details_autoPlay",//包裹所有图片的class选择器
-
-        "moveEleParent":"product_autoPlay",//包括点点以及图片的父元素，class选择器
-
-        "allShowEle":"product_show_content",//弹出模块框架的class值
-
-        "scaleEleParent":"jdshow_center_center",//缩放元素的父元素，class值
-
-        fn:function(){//执行相应的脚本
-
-            jfProductDetails.scrollEle(document.getElementById('NavTab'),45)
-        }
-    });
 
 
     //sku 选择
