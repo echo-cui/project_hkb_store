@@ -438,7 +438,7 @@ var productInfoPlay={
 };
 
 
-var jfProductDetails = {
+var jfProductDetailsIntroduce = {
 
 
     //------ 安卓系统滑动到一定位置固定tab
@@ -484,6 +484,8 @@ var jfProductDetails = {
 
         var allEle = fatherEle.getElementsByClassName(className);
 
+
+        console.log(allEle)
 
         for (var i = 0; i < allEle.length; i++) {
 
