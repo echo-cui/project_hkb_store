@@ -1,0 +1,121 @@
+
+
+
+
+/*删除地址弹框*/
+
+
+.tip_bg {
+  position: fixed;
+  left: -100%;
+  top: -100%;
+  width: 300%;
+  height: 300%;
+  background: black;
+  opacity: .5;
+  z-index: 1000;
+  animation: opacity_bg_change .5s;
+  transition: opacity .5s;
+}
+@keyframes opacity_bg_change {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+
+#tip_dialog .text_dialog_container {
+  width: 300px;
+  width: calc(80vw);
+  position: fixed;
+  z-index: 1001;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transform-origin: 50% 50%;
+  animation: showDialog .5s both;
+}
+@keyframes showDialog {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#tip_dialog .text_dialog_container .text_big{
+  color: #4a4a4a;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto 10px;
+  width: 90%;
+}
+
+#tip_dialog .text_dialog_container .text_small {
+  font-size: 14px;
+  margin: 10px auto;
+  width: 90%;
+  color: #ababab;
+  text-align: center;
+  p{
+    font-size: 12px;
+    text-align: left;
+    color: #4a4a4a;
+    &.text{
+      color: #8a8a8a;
+      font-size: 12px;
+      text-align: left;
+      text-indent: 2em;
+    }
+  }
+
+}
+#tip_dialog .text_dialog_container .dialog_button {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+#tip_dialog .text_dialog_container .dialog_button a{
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 5px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 16px;
+  color: #fff;
+  img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+}
+#tip_dialog .text_dialog_container .dialog_button a:active{
+  opacity: .6;
+}
+#tip_dialog .text_dialog_container .dialog_button a.dialog_check {
+  color: white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #ff8000;
+}
+#tip_dialog .text_dialog_container .dialog_button a.dialog_cancel {
+  color: #4a4a4a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  &.font_white{
+    color: #fff;
+  }
+}
+
