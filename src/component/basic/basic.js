@@ -117,6 +117,3 @@ var windowBanEvent = {
     }
 
 };
-
-
-
