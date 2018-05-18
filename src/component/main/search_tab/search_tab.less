@@ -1,3 +1,82 @@
-div{
-  background: red;
+.search_tab{
+  width: 94%;
+  height: 60px;
+  padding: 0 3%;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+
+  .city_choice{
+    width: 20%;
+    text-align: center;
+
+    .city{
+      display: inline-block;
+      color: #4a4a4a;
+
+
+      select {
+        border: none;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        padding-right: 14px;
+
+        background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+      }
+
+
+      select::-ms-expand { display: none; }
+
+
+      p{
+        display: inline-block;
+      }
+      .down_icon{
+        width: 10px;
+        vertical-align: middle;
+
+      }
+    }
+  }
+
+  .content{
+      width: 80%;
+  /*  background-color: #ddd;*/
+
+    .search{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #ebebeb;
+      border-radius: 100px;
+
+      .search_icon{
+        width: 12px;
+        padding:0 15px;
+      }
+
+      form{
+        border-radius: 100px;
+        width: 80%;
+
+      }
+
+      input{
+        border-radius: 100px;
+        background-color: #ebebeb;
+        width: 90%;
+        height: 36px;
+
+      }
+    }
+  }
 }
