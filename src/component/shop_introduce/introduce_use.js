@@ -477,31 +477,6 @@ var jfProductDetailsIntroduce = {
 
     },
 
-    //------点击切换class
-
-    clickTabChange: function (fatherEle, changeClass, className) {
-
-
-        var allEle = fatherEle.getElementsByClassName(className);
-
-
-        console.log(allEle)
-
-        for (var i = 0; i < allEle.length; i++) {
-
-            allEle[i].addEventListener('click', function () {
-
-                fatherEle.getElementsByClassName(changeClass)[0].className = fatherEle.getElementsByClassName(changeClass)[0].className.replace(changeClass, '');
-
-                this.className += ' ' + changeClass;
-
-            }, false);
-
-        }
-
-
-    },
-
 
     //------ 多个sku点击
     skuBoxChange: function () {
@@ -512,85 +487,6 @@ var jfProductDetailsIntroduce = {
 
             jfProductDetails.clickTabChange(skuBox[i], 'choose_tab', 'sku_box');
         }
-
-    },
-
-
-    //------tab点击切换页面
-
-    tabScrollChange: function () {
-
-        window.addEventListener('scroll', function () {
-
-
-            var thisNavTab = document.getElementById('NavTab');
-
-            var topTabHeigt = document.getElementsByClassName('product_nav_contain')[0];
-
-            var a = thisNavTab.offsetHeight + topTabHeigt.offsetHeight;
-
-            var parameterBlockDis = document.getElementsByClassName('product_images_parameter')[0];                         //参数规格到页面顶部的距离
-
-            var serviceBlockDis = document.getElementsByClassName('product_images_service')[0];                             //售后到页面顶部的距离
-
-
-            var imgBlockDis = document.getElementsByClassName('product_images')[0];
-
-
-            if (imgBlockDis.getBoundingClientRect().top > thisNavTab.offsetHeight) {                                       //超出部分大于45 = 商品
-
-
-                slideTabChoose(document.getElementsByClassName('content')[0], 'nav_tab', 0);
-
-            }
-
-            else if (imgBlockDis.getBoundingClientRect().top <= thisNavTab.offsetHeight) {                                //img模块小于等于45 = 图文
-
-
-                slideTabChoose(document.getElementsByClassName('content')[0], 'nav_tab', 1);
-
-
-                function titleTabChange() {                                                                                //图文&参数&售后切换
-
-
-                    if (serviceBlockDis.getBoundingClientRect().top - a <= 0) {                                             //参数模块到页面顶部的距离 a为两个导航的和
-
-
-                        slideTabChoose(document.getElementById('NavTab'), 'tab', 2);
-
-                    }
-                    else if (parameterBlockDis.getBoundingClientRect().top - a <= 0) {
-
-
-                        slideTabChoose(document.getElementById('NavTab'), 'tab', 1);
-
-                    }
-                    else {
-
-                        slideTabChoose(document.getElementById('NavTab'), 'tab', 0);
-                    }
-                }
-
-                titleTabChange();
-
-            }
-
-            function slideTabChoose(element, childClassName, num) {                                                    //选择切换tab
-
-                if (element.getElementsByClassName('choose_tab')[0]) {
-
-
-                    element.getElementsByClassName('choose_tab')[0].className = element.getElementsByClassName('choose_tab')[0].className.replace('choose_tab', '');
-
-                }
-
-                element.getElementsByClassName(childClassName)[num].className += ' choose_tab';
-
-            }
-
-
-        });
-
 
     },
 
