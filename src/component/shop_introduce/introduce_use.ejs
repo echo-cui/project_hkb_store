@@ -2,7 +2,7 @@
 <div class="introduce_use_all">
 
     <!-- 切换tab-->
-    <nav class="top_product_bar">
+<!--    <nav class="top_product_bar">
 
 
         <div class="product_nav_contain">
@@ -23,7 +23,7 @@
 
             <a class="right">&nbsp;</a>
         </div>
-    </nav>
+    </nav>-->
 
     <!--主图轮播-->
     <div class="product_autoPlay">
@@ -373,7 +373,7 @@
 
             <div class="hkb_alignment_left">
 
-                <a class="include_left">
+                <a href="hkb_cart.html" class="include_left">
                     <img src="../images/hkb_shopping/icon_shopping_11.png">
                 </a>
 
@@ -381,7 +381,7 @@
 
             </div>
 
-            <a class="operation_btn" href="#">立即购买</a>
+            <a class="operation_btn" href="affirm_product.html">立即购买</a>
 
         </div>
 
@@ -447,9 +447,9 @@
 
 
     //切换顶部tab
-    jfProductDetails.clickTabChange(document.getElementsByClassName('content')[0], 'choose_tab', 'nav_tab');
+    jfProductDetailsIntroduce.clickTabChange(document.getElementsByClassName('content')[0], 'choose_tab', 'nav_tab');
     //滚动切换
-    jfProductDetails.tabScrollChange();
+    jfProductDetailsIntroduce.tabScrollChange();
 
 
     //滚动滑动到一定位置tab固定
@@ -457,7 +457,7 @@
 
 
     //图文&规格&售后 切换
-    jfProductDetails.clickTabChange(document.getElementById('NavTab'), 'choose_tab', 'tab');
+    jfProductDetailsIntroduce.clickTabChange(document.getElementById('NavTab'), 'choose_tab', 'tab');
 
 
     /*商品详情页图片滚动以及缩放*/
@@ -480,7 +480,7 @@
 
     //sku 选择
 
-    jfProductDetails.skuBoxChange();
+    jfProductDetailsIntroduce.skuBoxChange();
 
 
 
