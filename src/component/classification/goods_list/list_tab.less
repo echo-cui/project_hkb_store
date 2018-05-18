@@ -1,0 +1,150 @@
+
+/*固定tab*/
+.search_results_nav {
+  position: fixed;
+  z-index: 999;
+  font-size: 16px;
+
+
+  .tab_box {
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 45px;
+    overflow: auto;
+  }
+  .search_nav_content {
+    position: fixed;
+    top: 105px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      /*float: left;*/
+      width: 18%;
+      height: 45px;
+      font-size: 13px;
+      color: #8a8a8a;
+      box-sizing: border-box;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:active {
+        opacity: .6;
+      }
+    }
+    /*综合*/
+    .comprehensive {
+      position: relative;
+      z-index: 3;
+      span {
+        display: inline-block;
+        width: 68px;
+        height: 45px;
+        line-height: 45px;
+        z-index: 2;
+      }
+      .arrow {
+        position: absolute;
+        display: block;
+        transform: scale(0.7, 0.4);
+        top: 0;
+        right: 5px;
+        line-height: 45px;
+        transition: transform .3s;
+      }
+    }
+    /*价格*/
+    .price {
+      position: relative;
+      .up_arrow, .down_arrow {
+        position: absolute;
+        display: block;
+        width: 100px;
+        height: 90px;
+        transform-origin: 0 0;
+        transform: scale(0.7, 0.4);
+        left: -10px;
+        line-height: 90px;
+        text-align: right;
+        z-index: 2;
+        &.select_arrow {
+          color: #ff8000;
+        }
+        &.show {
+          z-index: 1;
+          color: #ff8000;
+          & ~ span {
+            color: #ff8000;
+          }
+        }
+      }
+      .up_arrow {
+        top: 1px;
+        color: #8a8a8a;
+        z-index: 3;
+      }
+      .down_arrow {
+        top: 6px;
+        color: #8a8a8a;
+      }
+
+    }
+    /*品牌*/
+    .brand {
+      position: relative;
+      z-index: 3;
+      span {
+        display: inline-block;
+        width: 68px;
+        height: 45px;
+        line-height: 45px;
+        z-index: 2;
+      }
+      .arrow {
+        position: absolute;
+        display: block;
+        transform: scale(0.7, 0.4);
+        top: 0;
+        right: 5px;
+        line-height: 45px;
+        transition: transform .3s;
+      }
+    }
+    /*筛选*/
+    .filter {
+      position: relative;
+      z-index: 3;
+
+
+      span {
+        display: inline-block;
+        width: 68px;
+        height: 45px;
+        line-height: 45px;
+        z-index: 2;
+      }
+
+    }
+
+    .show {
+      color: #ff8000;
+      .arrow {
+        color: #ff8000;
+        transform: scale(.7, .4) rotate(-180deg);
+        transition: transform .3s;
+
+        //陈羽翔 816 增加箭头新的方式
+        &.another{
+          transform: scale(.7, .4) rotate(0deg);
+        }
+
+      }
+
+    }
+  }
+}
