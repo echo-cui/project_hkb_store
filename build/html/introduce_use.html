@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../../css/hkb_store.css">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="../css/hkb_store.css">
+</head>
+<body>
+
+
+<!--汇卡宝商城首页-->
+
+
+<div class="introduce_use_all">
+
+    <!-- 切换tab-->
+    <nav class="top_product_bar">
+
+
+        <div class="product_nav_contain">
+
+            <a class="left" onclick="window.history.go(-1)">
+            </a>
+
+            <div class="content">
+
+                <div class="nav_tab choose_tab" onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_autoPlay')[0],45)">商品
+                </div>
+
+                <div class="nav_tab" onclick="jfProductDetails.scrollEle(document.getElementById('NavTab'),45)">图文
+                </div>
+            </div>
+
+            <a class="right">&nbsp;</a>
+        </div>
+    </nav>
+
+    <!--主图轮播-->
+    <div class="product_autoPlay">
+
+    <div class="product_details_autoPlay">
+
+        <div class="jdshow_center_center">
+            <div class="jd_banner_touch">
+                <img src="../images/hkb_shopping/icon_shopping_06.jpg">
+            </div>
+        </div>
+
+        <div class="jdshow_center_center">
+            <div class="jd_banner_touch">
+                <img src="../images/hkb_shopping/icon_shopping_06.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="product_show_content">
+
+        <!--主体内容-->
+        <div class="img_content">
+            <!--图片-->
+            <div class="product_details_autoPlay"></div>
+        </div>
+
+        <!--遮罩层-->
+        <div class="showimg_shadow"></div>
+
+        <div class="delete_banner">X</div>
+
+    </div>
+
+    <!--价格信息-->
+    <div class="product_description">
+
+    <div class="product_advantage">
+
+        <span class="product_price_name">网易严选</span>
+        <span class="product_price">¥299.00</span>
+
+    </div>
+
+    <div class="product_advantage">
+
+        <span class="product_price_name">全棉针织条纹四件套</span>
+        <span class="product_price gray">市场价¥399.00</span>
+
+    </div>
+
+</div>
+
+    <!--规格-->
+    <div class="product_serve">
+
+    <!--01-->
+    <div class="serve_explain">
+
+        <span class="explain_name">规格数量选择</span>
+
+        <a href="">
+        <img src="../images/hkb_shopping/icon_shopping_03.png">
+        </a>
+
+    </div>
+
+    <!--02-->
+    <div class="talk_some">
+
+        <div class="talk_name">服务说明</div>
+
+        <div class="talk_text">
+
+            <div class="talk_text_1">
+
+                <div class="fff">
+
+                <img src="../images/hkb_shopping/icon_shopping_10.png">
+
+                <span>30天无忧退换货</span>
+
+                </div>
+
+                <div class="fff">
+
+                    <img src="../images/hkb_shopping/icon_shopping_10.png">
+
+                    <span>30天无忧退换货</span>
+
+                </div>
+
+            </div>
+
+            <div class="talk_text_1">
+
+                <div class="fff">
+
+                    <img src="../images/hkb_shopping/icon_shopping_10.png">
+
+                    <span>30天无忧退换货</span>
+
+                </div>
+
+                <div class="fff">
+
+                    <img src="../images/hkb_shopping/icon_shopping_10.png">
+
+                    <span>30天无忧退换货</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+    <!-- 向下滑动 -->
+    <div class="product_images_nav">
+
+        <div class="slide_down">详情页</div>
+    </div>
+
+    <!-- nav -->
+    <div class="images_nav">
+        <div class="images_nav_tab " id="NavTab">
+            <a class="tab choose_tab" onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_description')[0],87)">图文详情</a>
+            <a class="tab" onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_parameter')[0],87)">规格参数</a>
+         <!--   <a class="tab"
+               onclick="jfProductDetails.scrollEle(document.getElementsByClassName('product_images_service')[0],86)">售后相关</a>-->
+        </div>
+        <div class="images_nav_tab_empty"></div>
+    </div>
+
+    <!--图文详情-->
+    <div class="product_images_description">
+
+        <img src="../images/hkb_shopping/icon_shopping_08.jpg" data-src="" class="loading_img">
+
+    </div>
+
+    <!--规格参数-->
+    <div class="product_images_parameter">
+        <div class="parameter_title">规格参数</div>
+        <div class="parameter_table">
+            <table border="1" cellspacing="0" cellpadding="0" bordercolor="#ddd">
+                <tr>
+                    <td>商品编号</td>
+                    <td>11544981492</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">主体积</td>
+                </tr>
+                <tr>
+                    <td>系列</td>
+                    <td>MacBook Air</td>
+                </tr>
+                <tr>
+                    <td>颜色</td>
+                    <td>银色</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">显示器</td>
+                </tr>
+                <tr>
+                    <td>显示比例</td>
+                    <td>其他比例</td>
+                </tr>
+                <tr>
+                    <td>物理分辨率</td>
+                    <td>其他</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">硬盘</td>
+                </tr>
+                <tr>
+                    <td>硬盘容量</td>
+                    <td>其他</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">内存</td>
+                </tr>
+                <tr>
+                    <td>内存容量</td>
+                    <td>其他</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">通讯</td>
+                </tr>
+                <tr>
+                    <td>局域网</td>
+                    <td>其他</td>
+                </tr>
+                <tr>
+                    <td>无线局域网</td>
+                    <td>其他</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">端口</td>
+                </tr>
+                <tr>
+                    <td>音频端口</td>
+                    <td>其他</td>
+                </tr>
+                <tr>
+                    <td>无线局域网</td>
+                    <td>其他</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">音效系统</td>
+                </tr>
+                <tr>
+                    <td>扬声器</td>
+                    <td>内置扬声器</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2">输入设备</td>
+                </tr>
+                <tr>
+                    <td>键盘</td>
+                    <td>背光键盘</td>
+                </tr>
+                <tr>
+                    <td>触摸板</td>
+                    <td>有</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--立即购买-->
+    <div class="operation_tab">
+
+    <div class="hkb_alignment_left">
+
+        <a class="include_left">
+            <img src="../images/hkb_shopping/icon_shopping_11.png">
+        </a>
+
+        <a class="hkb_price"><span>加入购物车</span></a>
+
+    </div>
+
+    <a class="operation_btn" href="#">立即购买</a>
+
+</div>
+
+    <!--弹出底部-->
+    <div class="product_prompt_buy">
+
+    <div class="hkb_pop_up_main">
+
+        <div class="pop_main" id="main_sku">
+
+            <div class="pop_content">
+
+                <!-- 主图显示-->
+                <div class="product_details_imf">
+
+                    <div class="details_imf_cost">
+
+                        <div class="product_img">
+                        <img src="../images/hkb_shopping/icon_shopping_02.png">
+                    </div>
+
+                        <div class="price">
+                            <div>￥126.00</div>
+                            <div>请选择规格属性</div>
+                        </div>
+
+                    </div>
+
+                    <div class="pop_cancel"></div>
+
+                </div>
+
+
+                <div style="padding-top:102px; ">
+
+                    <!--sku 颜色-->
+                    <div class="sku_title">颜色</div>
+                    <div class="sku_contain ">
+                        <div class="sku_box choose_tab">黑色</div>
+                        <div class="sku_box">白色</div>
+                        <div class="sku_box">蓝色</div>
+                        <div class="sku_box out_of_stock">绿色</div>
+
+                    </div>
+
+                    <!--sku 颜色-->
+                    <div class="sku_title">号码</div>
+                    <div class="sku_contain ">
+                        <div class="sku_box choose_tab">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box out_of_stock">XL</div>
+                        <div class="sku_box out_of_stock">XL</div>
+                        <div class="sku_box">XLXLXL</div>
+
+                    </div>
+
+
+                    <!--sku 颜色-->
+                    <div class="sku_title">号码</div>
+                    <div class="sku_contain ">
+                        <div class="sku_box choose_tab">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XL</div>
+                        <div class="sku_box">XLXLXL</div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="sku_volume_purchased">
+
+                <div>数量</div>
+
+                <div class="volume_btn">
+                    <span class="reduce" onclick="myFunctionSub()">－</span>
+                    <input type="number" pattern="[0-9]*" class="volume_input" value="1" disabled>
+                    <span class="add" onclick="myFunctionAdd()">＋</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="operation_tab">
+
+            <div class="hkb_alignment_left">
+
+                <a class="include_left">
+                    <img src="../images/hkb_shopping/icon_shopping_11.png">
+                </a>
+
+                <a class="hkb_price"><span>加入购物车</span></a>
+
+            </div>
+
+            <a class="operation_btn" href="#">立即购买</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<script src="../js/fastclick.min.js"></script>
+<script src="../js/hkb_store.js"></script>
+<script>
+
+
+    //点击选择时，弹出底部选项
+    document.getElementsByClassName('serve_explain')[0].addEventListener('click',function () {
+
+        document.getElementsByClassName('product_prompt_buy')[0].className = 'product_prompt_buy show_bottom_plate';
+
+        document.getElementsByTagName('body')[0].className = 'ovfHiden';
+
+        document.getElementsByTagName('html')[0].className = 'ovfHiden';
+
+    },false)
+
+    //点击关闭按钮，关闭底部弹出
+    document.getElementsByClassName('pop_cancel')[0].addEventListener('click',function () {
+
+        document.getElementsByClassName('product_prompt_buy')[0].className = 'product_prompt_buy';
+
+        document.getElementsByTagName('body')[0].className = '';
+
+        document.getElementsByTagName('html')[0].className = '';
+
+    },false)
+
+    //加减
+    var a = 0;//声明变量a，赋值为0;
+
+    function myFunctionAdd() {
+
+        if (a<99999) {
+
+            a++;//当a的值小于10时，执行a++;
+            console.log(a)
+
+        }
+
+        document.getElementsByClassName("volume_input")[0].value = a;//id值为"ttxx"的元素就等于a;
+
+    }
+
+    function myFunctionSub() {
+
+        if (a>0) {
+
+            a--;
+
+        }
+
+        document.getElementsByClassName("volume_input")[0].value = a;
+
+    }
+
+
+
+    //切换顶部tab
+    jfProductDetails.clickTabChange(document.getElementsByClassName('content')[0], 'choose_tab', 'nav_tab');
+    //滚动切换
+    jfProductDetails.tabScrollChange();
+
+
+    //滚动滑动到一定位置tab固定
+    window.addEventListener('scroll',jfProductDetails.slidePositionTab);
+
+
+    //图文&规格&售后 切换
+    jfProductDetails.clickTabChange(document.getElementById('NavTab'), 'choose_tab', 'tab');
+
+
+    /*商品详情页图片滚动以及缩放*/
+    productInfoPlay.init({
+
+        "moveEle":"product_details_autoPlay",//包裹所有图片的class选择器
+
+        "moveEleParent":"product_autoPlay",//包括点点以及图片的父元素，class选择器
+
+        "allShowEle":"product_show_content",//弹出模块框架的class值
+
+        "scaleEleParent":"jdshow_center_center",//缩放元素的父元素，class值
+
+        fn:function(){//执行相应的脚本
+
+            jfProductDetails.scrollEle(document.getElementById('NavTab'),45)
+        }
+    });
+
+
+    //sku 选择
+
+    jfProductDetails.skuBoxChange();
+
+
+
+
+
+</script>
+</body>
+</html>
