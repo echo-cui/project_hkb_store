@@ -4,17 +4,17 @@
     <div class="shop_order_tab">
 
         <div class="tab_contain jdshop_shadow" id="orderTab">
-            <div class="tab choose_tab" id="food">食品</div>
-            <div class="tab" id="electrical">家电</div>
-            <div class="tab" id="mother">母婴</div>
-            <div class="tab" id="housewear">家居用品</div>
-            <div class="tab" id="wine">酒水</div>
-            <div class="tab" id="electrical">家电</div>
-            <div class="tab" id="mother">母婴</div>
-            <div class="tab" id="housewear">家居用品</div>
-            <div class="tab" id="wine">酒水</div>
-            <div class="tab" id="electrical">家电</div>
-            <div class="tab" id="mother">母婴</div>
+            <div class="tab clicks choose_tab" >食品</div>
+            <div class="tab clicks">家电</div>
+            <div class="tab clicks">母婴</div>
+            <div class="tab clicks">家居用品</div>
+            <div class="tab clicks">酒水</div>
+            <div class="tab clicks">家电</div>
+            <div class="tab clicks">母婴</div>
+            <div class="tab clicks">家居用品</div>
+            <div class="tab clicks">酒水</div>
+            <div class="tab clicks">家电</div>
+            <div class="tab clicks">母婴</div>
 
 
         </div>
@@ -27,13 +27,9 @@
     </div>
 
 
-
-
-
-
 </div>
 
-<script src="../../js/jquery-3.0.0.min.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
 
 <script>
 
@@ -43,15 +39,7 @@
 
     jfProductDetails.clickTabChange(document.getElementById('orderTab'), 'choose_tab', 'tab');
 
-    showDown.showFood();
-
-    showDown.showElec();
-
-    showDown.showMother();
-
-    showDown.showHousewear();
-
-    showDown.showWine();
+    showDown.changeTab();
 
     showDown.hideThis();
 
