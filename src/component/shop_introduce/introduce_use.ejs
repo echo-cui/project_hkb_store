@@ -26,38 +26,47 @@
     </nav>-->
 
     <!--主图轮播-->
-    <div class="product_autoPlay">
 
-    <div class="product_details_autoPlay">
+    <div class="jf_homepage_autoplay ">
 
-        <div class="jdshow_center_center">
-            <div class="jd_banner_touch">
-                <img src="../images/hkb_shopping/icon_shopping_06.jpg" >
-            </div>
+        <div class="jf_autoplay_images ">
+
+            <a href="">
+                <div class="JD_banner_template">
+
+                    <div class="banner_paster">
+                        <img src="../images/hkb_shopping/icon_shopping_06.jpg">
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="">
+                <div class="JD_banner_template">
+
+                    <div class="banner_paster">
+                        <img src="../images/hkb_shopping/icon_shopping_08.jpg">
+                    </div>
+
+                </div>
+            </a>
+
+            <a href="">
+                <div class="JD_banner_template">
+
+                    <div class="banner_paster">
+                        <img src="../images/hkb_shopping/icon_shopping_09.jpg">
+                    </div>
+
+                </div>
+            </a>
+
+
         </div>
 
-        <div class="jdshow_center_center">
-            <div class="jd_banner_touch">
-                <img src="../images/hkb_shopping/icon_shopping_06.jpg" >
-            </div>
+        <div class="jf_pagination">
+
         </div>
-
-    </div>
-
-    </div>
-
-    <div class="product_show_content">
-
-        <!--主体内容-->
-        <div class="img_content">
-            <!--图片-->
-            <div class="product_details_autoPlay"></div>
-        </div>
-
-        <!--遮罩层-->
-        <div class="showimg_shadow"></div>
-
-        <div class="delete_banner">X</div>
 
     </div>
 
@@ -277,7 +286,7 @@
 
     </div>
 
-    <a class="operation_btn" href="#">立即购买</a>
+    <a class="operation_btn" href="affirm_product.html">立即购买</a>
 
 </div>
 
@@ -369,21 +378,6 @@
 
         </div>
 
-        <div class="operation_tab">
-
-            <div class="hkb_alignment_left">
-
-                <a href="hkb_cart.html" class="include_left">
-                    <img src="../images/hkb_shopping/icon_shopping_11.png">
-                </a>
-
-                <a class="hkb_price"><span>加入购物车</span></a>
-
-            </div>
-
-            <a class="operation_btn" href="affirm_product.html">立即购买</a>
-
-        </div>
 
     </div>
 
@@ -451,9 +445,11 @@
 
 
     //sku 选择
-
     jfProductDetailsIntroduce.skuBoxChange();
 
+
+    //轮播图
+    jfAutoPlay.jfCarouselInit();
 
 
 </script>
