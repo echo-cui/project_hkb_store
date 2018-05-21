@@ -1,0 +1,252 @@
+.jf_pay_page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  >div.section_container{
+    width: 100%;
+    height: 100%;
+    height: calc(~'100vh');
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    transform: translate3d(100%,0,0);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f5f5f9;
+    z-index: 1000;
+
+    &:first-child{
+      display: block;
+    }
+
+    .container_main{
+      height: 90%;
+      height: calc(~"100% - 60px");
+      height: calc(~"100vh - 60px");
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .zhuangyi_pay_shoppingcart{
+
+      >div{
+        width: 95%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+        .weui_btn_area{
+          margin: 0;
+        }
+      }
+
+
+
+
+      /*福豆收银台更改*/
+      .pay_price{
+        &:after{
+          content: " ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ";
+          display: block;
+          width: 96%;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 2.5%;
+          top: -16px;
+          color: #E9E9E9;
+          font-size: 18px;
+
+          @media screen and(max-width: 380px){
+            top: -15px;
+          }
+
+          @media screen and(max-width: 330px){
+            width: 98%;
+            left: 1%;
+          }
+        }
+
+      }
+
+
+      .pay_coupon{
+        background: #fff;
+        width: 95%;
+        padding: 0 15px;
+        margin-top: 3px;
+        position: relative;
+
+        /*开关按钮*/
+        .switch_zy {
+          width: 40px;
+          height: 24px;
+          position: relative;
+          vertical-align: top;
+          border: 1px solid #ddd;
+          background-color: #ddd;
+          border-radius: 20px;
+          display: inline-block;
+          outline: 0;
+          -webkit-appearance: none;
+          appearance: none;
+          -webkit-user-select: none;
+          user-select: none;
+          box-sizing: border-box;
+          background-clip: padding-box;
+          -webkit-transition: all .2s linear;
+          transition: all .2s linear;
+          float: right;
+          margin-left: 10px;
+        }
+
+        .switch_zy:before {
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: .6rem;
+          background-color: #fff;
+          content: '';
+          -webkit-transition: left .2s;
+          transition: left .2s;
+        }
+
+        .switch_zy:checked {
+          border-color: #10a6e2;
+          background-color: #10a6e2;
+        }
+
+        .switch_zy:checked:before {
+          left: 16px;
+        }
+
+
+
+
+
+
+        >a.list{
+          padding: 12px 0;
+          display: flex;
+          align-content: center;
+          justify-content: space-between;
+          font-size: 16px;
+          color: #7a7a7a;
+          border-bottom: dashed 1px #ddd;
+
+          span{
+            &:last-child{
+              color: #4a4a4a;
+              padding-right:15px;
+              font-size: 18px;
+            }
+
+
+          }
+          span.saleNum{
+            color: #fc6329;
+            position: relative;
+            font-size: 16px;
+
+
+          }
+
+          span.saleNum.moreCoupons{
+            font-size: 18px;
+            &:after{
+              content: "";
+              color: #fc6329;
+              position: absolute;
+              right: 0;
+              top: 9px;
+              width: 8px;
+              height: 8px;
+              border-top: solid 1px #fc6329;
+              border-right: solid 1px #fc6329;
+              transform: rotate(45deg);
+            }
+          }
+          &:last-child{
+            border-bottom: none;
+          }
+
+        }
+      }
+
+      .pay_fudou{
+        margin-top: 15px;
+      }
+
+
+
+
+
+      .weui_cell{
+
+        &:first-child{
+          &:before{
+              content: " ";
+              position: absolute;
+              top: 0;
+              width: 95%;
+              height: 1px;
+              border-top: none;
+          }
+        }
+      }
+
+      .weui_cells_checkbox{
+        box-shadow: 0 2px 3px #e9e9e9;
+
+      }
+
+      .Special-List{
+        margin-top: 15px;
+        border-bottom: 1px #ddd dashed;
+        color: #7a7a7a;
+        font-size: 16px;
+        padding: 10px 0;
+        height: auto;
+      }
+      .weui_detal{
+        margin-bottom: 0;
+        font-size: 16px;
+        padding:12px 15px;
+
+      }
+    }
+
+    .pay_bottom_btn{
+      width: 95%;
+      margin: 5px auto;
+      background: #10a6e2;
+      border-radius: 30px;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        height: 50px;
+        font-size: 16px;
+
+        span{
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  >div.section_container.section_show{
+    width: 100%;
+    display: block;
+    transform: translateX(0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+
