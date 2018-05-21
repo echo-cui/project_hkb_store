@@ -14,20 +14,27 @@
   top: 0;
 
   .city_choice{
-    width: 60px;
+    width: 20%;
     text-align: center;
 
     .city{
       display: inline-block;
       color: #4a4a4a;
 
-      .hkb_logo{
-        width: 32px;
 
-        vertical-align: middle;
+      select {
+        border: none;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        padding-right: 14px;
+
+        background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
       }
 
 
+      select::-ms-expand { display: none; }
 
 
       p{
