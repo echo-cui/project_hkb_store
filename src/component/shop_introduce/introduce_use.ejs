@@ -280,13 +280,17 @@
 
         <a class="include_left">
             <img src="../images/hkb_shopping/icon_shopping_11.png">
+            <span class="cartnum_boom">6</span>
+
         </a>
 
-        <a class="hkb_price"><span>加入购物车</span></a>
+        <!--<a class="hkb_price"><span>加入购物车</span></a>-->
+        <button class="hkb_price"  onclick="jfShowTips.toastShow({'text' : '加入购物车成功~'})">加入购物车</button>
 
     </div>
 
-    <a class="operation_btn" href="affirm_product.html">立即购买</a>
+    <!--<a class="operation_btn" href="affirm_product.html">立即购买</a>-->
+  <button class="operation_btn"  onclick="window.location.href='affirm_product.html'">立即购买</button>
 
 </div>
 
@@ -325,10 +329,14 @@
                     <div class="spec-item">
                         <div class="sku_title">颜色</div>
                         <div class="sku_contain ">
-                            <a class="sku_box choose_tab">黑色</a>
-                            <a class="sku_box">白色</a>
-                            <a class="sku_box">蓝色</a>
-                            <a class="sku_box out_of_stock">绿色</a>
+                           <span class="span_box"><a class="sku_box choose_tab">黑色</a></span>
+                            <span class="span_box"><a class="sku_box">白色</a></span>
+                            <span class="span_box"><a class="sku_box">蓝色</a></span>
+                            <span class="span_box"><a class="sku_box out_of_stock">绿色</a></span>
+
+
+
+
                     </div>
                     </div>
 
@@ -336,13 +344,13 @@
                     <div class="spec-item">
                         <div class="sku_title">号码</div>
                         <div class="sku_contain ">
-                            <a class="sku_box choose_tab">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box out_of_stock">XL</a>
-                            <a class="sku_box out_of_stock">XL</a>
-                            <a class="sku_box">XLXLXL</a>
+                            <span class="span_box"> <a class="sku_box choose_tab">XL</a></span>
+                            <span class="span_box"> <a class="sku_box">XL</a></span>
+                           <span class="span_box">  <a class="sku_box">XL</a></span>
+                            <span class="span_box"> <a class="sku_box">XL</a></span>
+                           <span class="span_box">  <a class="sku_box out_of_stock">XL</a></span>
+                            <span class="span_box"> <a class="sku_box out_of_stock">XL</a></span>
+                            <span class="span_box"> <a class="sku_box">XLXLXL</a></span>
 
                         </div>
                     </div>
@@ -351,13 +359,13 @@
                     <div class="spec-item">
                         <div class="sku_title">号码</div>
                         <div class="sku_contain ">
-                            <a class="sku_box choose_tab">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XL</a>
-                            <a class="sku_box">XLXLXL</a>
+                            <span class="span_box"> <a class="sku_box choose_tab">XL</a></span>
+                            <span class="span_box">  <a class="sku_box">XL</a></span>
+                            <span class="span_box"> <a class="sku_box">XL</a></span>
+                            <span class="span_box">   <a class="sku_box">XL</a></span>
+                            <span class="span_box">  <a class="sku_box">XL</a></span>
+                            <span class="span_box">  <a class="sku_box">XL</a></span>
+                            <span class="span_box"> <a class="sku_box">XLXLXL</a></span>
 
                         </div>
                     </div>
@@ -486,7 +494,7 @@
 
 </div>
 
-<script src="../../js/jquery-3.0.0.min.js"></script>
+<script src="../js/jquery-3.0.0.min.js"></script>
 <script>
 
     //点击选择时，弹出底部选项

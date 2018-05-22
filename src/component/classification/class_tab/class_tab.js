@@ -339,172 +339,79 @@ var jfProductDetails = {
 
 var showDown={
 
-    //食品
-    showFood:function () {
+    //点击tab，切换，收起
+    changeTab:function () {
+
+        var clickThings = document.getElementsByClassName('clicks');
+
+        var closeDetail = document.getElementsByClassName('jd_drop_down_content')[0];
+
+        for (var i=0;i<clickThings.length;i++) {
+
+            clickThings[i].addEventListener('click',function () {
+
+                if (this.className.indexOf('choose_tab')>-1) {
+
+                    if (closeDetail.className.indexOf('show_table')>-1) {
+
+                        closeDetail.className = 'jd_drop_down_content';
+
+                    }else {
+
+                        closeDetail.className = 'jd_drop_down_content show_table';
+
+                    }
+
+                }
+
+            },false)
+
+            /*clickThings[i].addEventListener('click',function () {
+
+                var thisEle=this;
+
+                var rightIndex = test();
+
+                function test() {
+
+                    for (var j=0;j<clickThings.length;j++) {
+
+                        if (thisEle==clickThings[j]) {
+
+                            return j;
+                        }
+
+                    }
+
+                }
 
 
+                if (document.getElementsByClassName('show_table')[0]) { //自己有这个样式的时候显示
 
-        var clickMent=document.getElementById('food');
+                    if (closeDetail[rightIndex].className.indexOf('show_table')>-1){
 
-        clickMent.addEventListener('click',function () {
+                        document.getElementsByClassName('show_table')[0].className=document.getElementsByClassName('show_table')[0].className.replace('show_table','');//自己移除这个样式不显示
 
+                    }else {
 
+                        document.getElementsByClassName('show_table')[0].className=document.getElementsByClassName('show_table')[0].className.replace('show_table','');//移除自己这个样式不显示
 
-            var hideDiv=document.getElementsByClassName('food')[0];
+                        closeDetail[rightIndex].className = 'jd_drop_down_content show_table';//当前点击的事件增加这个样式显示
 
-
-
-            if (hideDiv.className.indexOf('show_table')<0) {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-                hideDiv.className = 'jd_drop_down_content food show_table';
-
-            }
-
-            else {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-            }
+                    }
 
 
+                }else {
 
-        },false)
+                    closeDetail[rightIndex].className = 'jd_drop_down_content show_table';//加载时没有的时候，自己增加这个样式显示
 
-    },
+                }
 
-    //家电
-    showElec:function () {
+            },false)*/
 
-
-
-        var clickMent=document.getElementById('electrical');
-
-        clickMent.addEventListener('click',function () {
-
-
-
-            var hideDiv=document.getElementsByClassName('electrical')[0];
-
-            if (hideDiv.className.indexOf('show_table')<1) {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-                hideDiv.className = 'jd_drop_down_content electrical show_table';
-
-            }
-
-            else {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-            }
-
-        },false)
-
-    },
-
-
-    //母婴
-    showMother:function () {
-
-
-
-        var clickMent=document.getElementById('mother');
-
-        clickMent.addEventListener('click',function () {
-
-
-
-            var hideDiv=document.getElementsByClassName('mother')[0];
-
-            if (hideDiv.className.indexOf('show_table')<1) {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-                hideDiv.className = 'jd_drop_down_content mother show_table';
-
-            }
-
-            else {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-            }
-
-        },false)
+        }
 
     },
-
-
-
-    //家居用品
-    showHousewear:function () {
-
-
-
-        var clickMent=document.getElementById('housewear');
-
-        clickMent.addEventListener('click',function () {
-
-
-
-            var hideDiv=document.getElementsByClassName('housewear')[0];
-
-            if (hideDiv.className.indexOf('show_table')<1) {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-                hideDiv.className = 'jd_drop_down_content housewear show_table';
-
-            }
-
-            else {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-            }
-
-        },false)
-
-    },
-
-
-
-    //酒水
-    showWine:function () {
-
-
-
-        var clickMent=document.getElementById('wine');
-
-        clickMent.addEventListener('click',function () {
-
-
-
-            var hideDiv=document.getElementsByClassName('wine')[0];
-
-            if (hideDiv.className.indexOf('show_table')<1) {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-                hideDiv.className = 'jd_drop_down_content wine show_table';
-
-            }
-
-            else {
-
-                showDown.closeFn();//关闭所有的弹出框
-
-            }
-
-        },false)
-
-    },
-
-
-
 
 
     //关闭所有，只留一个
@@ -512,7 +419,7 @@ var showDown={
 
 
 
-        if(document.getElementById('search_prompt').getElementsByClassName('show_table').length) {
+        if(document.getElementById('search_prompt').getElementsByClassName('show_table')[0]) {
             console.log('test')
 
             document.getElementById('search_prompt').getElementsByClassName('show_table')[0].className = document.getElementById('search_prompt').getElementsByClassName('show_table')[0].className.replace('show_table', '')
@@ -529,7 +436,17 @@ var showDown={
 
             thisLable[i].addEventListener('click',function () {
 
-                showDown.closeFn();//关闭所有的弹出框
+                var hideLine=document.getElementsByClassName('jd_drop_down_content');
+
+                for (var i=0;i<hideLine.length;i++) {
+
+                    if (hideLine[i].className.indexOf('show_table')>-1) {
+
+                        hideLine[i].className = 'jd_drop_down_content';
+
+                    }
+
+                }
 
             },false)
 

@@ -132,7 +132,7 @@ var addressChoose = {
             var thisUrl = xDetails.yourUrl || 'http://118.242.19.26:188';
 
             //接口地址 thisNum为id
-            var addressUrl = thisUrl+'/jf_market_jd_server/api/address/getArea?areaId='+ thisNum;
+            var addressUrl = thisUrl+ thisNum;
 
 
 
@@ -172,6 +172,8 @@ var addressChoose = {
 
 
                             var addressEles = document.getElementById('jd_address_select').getElementsByClassName('address');
+
+                            console.log(xhr.responseText);
 
                             //如果为1的时候用这个方法
                             if(returnNum==1){
@@ -256,6 +258,8 @@ var addressChoose = {
             };
 
             xhr.open(type, addressUrl);
+
+            console.log(addressUrl);
 
             xhr.send(null);
 

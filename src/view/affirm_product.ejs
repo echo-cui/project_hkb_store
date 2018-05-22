@@ -8,10 +8,50 @@
 <body>
 
 
-<!--汇卡宝商城首页-->
 
-<%- include('../component/shop_affirm/affirm_product.ejs')%>
+<div class="jf_pay_page">
+    <!--收银台-->
+    <div class="section_container section_show" data-href="0">
+
+        <!--汇卡宝商城首页-->
+
+
+        <%- include('../component/shop_affirm/affirm_product.ejs')%>
+
+    </div>
+
+
+    <!--地址列表-->
+    <div class="section_container " data-href="1">
+
+        <%- include('../component/delivery_address/delivery_address.ejs')%>
+
+
+    </div>
+
+
+    <!--编辑地址-->
+    <div class="section_container" data-href="2">
+
+        <%- include('../component/delivery_address/edit_address.ejs')%>
+
+    </div>
+
+    <!--新增地址-->
+    <div class="section_container" data-href="3">
+
+
+        <%- include('../component/add_address/add_address.ejs')%>
+
+    </div>
+</div>
+
+
 
 
 </body>
+
+<script>
+    pageChange.init();//单页切换
+</script>
 </html>
