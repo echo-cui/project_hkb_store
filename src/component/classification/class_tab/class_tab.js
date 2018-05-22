@@ -339,19 +339,34 @@ var jfProductDetails = {
 
 var showDown={
 
-
-
-
     //点击tab，切换，收起
     changeTab:function () {
 
         var clickThings = document.getElementsByClassName('clicks');
 
-        var closeDetail = document.getElementsByClassName('jd_drop_down_content');
+        var closeDetail = document.getElementsByClassName('jd_drop_down_content')[0];
 
         for (var i=0;i<clickThings.length;i++) {
 
             clickThings[i].addEventListener('click',function () {
+
+                if (this.className.indexOf('choose_tab')>-1) {
+
+                    if (closeDetail.className.indexOf('show_table')>-1) {
+
+                        closeDetail.className = 'jd_drop_down_content';
+
+                    }else {
+
+                        closeDetail.className = 'jd_drop_down_content show_table';
+
+                    }
+
+                }
+
+            },false)
+
+            /*clickThings[i].addEventListener('click',function () {
 
                 var thisEle=this;
 
@@ -392,25 +407,24 @@ var showDown={
 
                 }
 
-            },false)
+            },false)*/
 
         }
 
     },
 
 
-
     //关闭所有，只留一个
-    /*closeFn:function () {
+    closeFn:function () {
 
 
 
-        if(document.getElementById('search_prompt').getElementsByClassName('show_table').length) {
+        if(document.getElementById('search_prompt').getElementsByClassName('show_table')[0]) {
             console.log('test')
 
             document.getElementById('search_prompt').getElementsByClassName('show_table')[0].className = document.getElementById('search_prompt').getElementsByClassName('show_table')[0].className.replace('show_table', '')
         }
-    },*/
+    },
 
 
 
