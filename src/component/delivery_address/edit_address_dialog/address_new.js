@@ -173,7 +173,7 @@ var addressChoose = {
 
                             var addressEles = document.getElementById('jd_address_select').getElementsByClassName('address');
 
-                            console.log(xhr.responseText);
+                            //console.log(xhr.responseText);
 
                             //如果为1的时候用这个方法
                             if(returnNum==1){
@@ -250,7 +250,7 @@ var addressChoose = {
 
                         else {
 
-                            console.log('读取失败');
+                            //console.log('读取失败');
 
                         }
                         break;
@@ -259,7 +259,7 @@ var addressChoose = {
 
             xhr.open(type, addressUrl);
 
-            console.log(addressUrl);
+            //console.log(addressUrl);
 
             xhr.send(null);
 
