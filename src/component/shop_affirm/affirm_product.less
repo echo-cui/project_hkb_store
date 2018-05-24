@@ -1,45 +1,70 @@
 
-/*收货地址*/
-.take_address{
+.container_main{
 
-  background-color: white;
-  padding: 15px 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /*收货地址*/
+  .take_address{
 
-  .address_name{
+    background-color: white;
+    padding: 15px 15px;
     display: flex;
-    justify-content: flex-start;
-    vertical-align: top;
-    width: 100%;
-    .name_name{
-      font-size: 14px;
-      color: #4a4a4a;
-      padding-right: 30px;
-    }
+    align-items: center;
+    justify-content: space-between;
 
-    .contact_phone{
-      text-align: left;
-      width: 60%;
-      div{
+
+
+    .address_name{
+      display: flex;
+      justify-content: flex-start;
+      vertical-align: top;
+      width: 100%;
+      .name_name{
         font-size: 14px;
         color: #4a4a4a;
+        padding-right: 30px;
       }
-      span{
-        font-size: 12px;
-        color: #8a8a8a;
+
+      .contact_phone{
+        text-align: left;
+        width: 60%;
+        div{
+          font-size: 14px;
+          color: #4a4a4a;
+        }
+        span{
+          font-size: 12px;
+          color: #8a8a8a;
+        }
       }
+
     }
 
   }
 
-  .address_icon{
-    height: 15px;
-    width: 15px;
+  .address{
+    display: none;
   }
 
 
+
+
+/*没有地址*/
+  .no_address{
+
+
+    .add_address_icon{
+      width: 32px;
+      margin-right: 20px;
+    }
+
+  }
+
+
+}
+
+
+.address_icon{
+  height: 15px;
+  width: 15px;
 }
 
 
@@ -308,6 +333,7 @@
       }
 
     }
+
 
   }
 
