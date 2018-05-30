@@ -16,7 +16,7 @@
     padding: 0 20px;
 
     .order_public{
-      padding: 15px 0;
+      padding: 10px 0;
     }
 
     .number_detail{
@@ -24,21 +24,25 @@
       justify-content: space-between;
       align-items: center;
 
-     div {
+      .left{
+        color: #8a8a8a;
+      }
+
+      .right{
+       color: #ff8000;
        display: flex;
        align-items: center;
+
        .middle {
-         color: #ff8000;
          padding-right: 15px;
        }
-       .right {
-         color: #ff8000;
-       }
+
      }
 
     }
     .order_time{
       border-top: 1px solid #ddd;
+      color: #8a8a8a;
     }
   }
 
@@ -49,7 +53,6 @@
     border-top: 1px solid #ddd;
 
     .list_detail{
-
 
       .store_title{
         display: flex;
@@ -104,8 +107,7 @@
        }
       }
 
-
-      .goods_total{
+      .goods_total {
         text-align: right;
 
 
@@ -117,11 +119,9 @@
   /*总计*/
 
   .total{
-    padding: 20px 0;
+    padding: 10px 0;
     border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
 
     @media screen and (max-width: 320px) {
       font-size: 12px;
@@ -133,11 +133,12 @@
       padding: 2px 5px;
       border-radius: 5px;
     }
-
   }
 
   .order_total{
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     padding:20px;
 
