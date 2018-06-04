@@ -54,19 +54,29 @@
   max-height: 250px;
   padding: 15px;
   overflow-y: scroll;
-  text-align: center;
+  text-align: left;
 
   div.tab{
     float: left;
-    width: 70px;
+    width: 75px;
     font-size: 12px;
     box-sizing: border-box;
     padding: 3px 5px;
-    margin: 8px;
+    margin: 5px;
     text-align: -moz-center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    p{
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      -webkit-line-clamp:1;
+    }
+
 
     img{
       width: 100%;
@@ -81,9 +91,9 @@
 
   }
 
-  div.tab:hover{
-
-    color: #ff8000;
+  div.tab:active{
+    color: white;
+    background-color: #ff8000;
     border: #ff8000 1px solid;
   }
   &:after{
