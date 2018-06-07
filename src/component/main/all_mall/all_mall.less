@@ -13,12 +13,31 @@
 
     .mall_list{
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+      align-items: center;
 
       .mall_detail{
         display: inline-block;
         text-align: center;
         color: #4a4a4a;
+        margin: 5px 2px;
+
+        @media screen and (max-width:414px) {
+          margin: 5px 6px;
+        }
+
+        @media screen and (max-width:375px) {
+          margin: 5px 2px;
+        }
+
+        @media screen  and (max-width: 360px) {
+          margin: 5px 0;
+        }
+
+        @media screen  and (max-width: 330px) {
+          margin: 5px -4px;
+        }
 
         img{
           width:60%;
@@ -26,11 +45,6 @@
       }
 
     }
-
-    .list2{
-      margin-top: 20px;
-    }
-
 
   }
 }
