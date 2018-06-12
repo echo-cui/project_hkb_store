@@ -82,6 +82,10 @@
   margin-top: 10px;
   padding: 0 2%;
 
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
 
   /*品牌及包邮信息*/
   .cost_express{
@@ -302,10 +306,7 @@
 
 /*编辑*/
 .operation_tab_a{
-  position: fixed;
   height: 55px;
-  z-index: 500;
-  bottom: 0;
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -349,6 +350,10 @@
     background-color: #ff8000;
     border: none;
 
+    &:before{
+      display: none;
+    }
+
     &:active{
       opacity: .8;
     }
@@ -369,4 +374,14 @@
     transform: scaleY(0.2);
   }
 
+}
+
+.empty_bottom_plate {
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 55px;
+}
+
+.bottom_index {
+  z-index: 500;
 }
